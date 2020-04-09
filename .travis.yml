@@ -1,9 +1,9 @@
 language: python
 jobs:
   include:
-    - name: "Python 3.7.1 on Linux"
+  - name: "Python 3.7.1 on Linux"
     python: 3.7.1 
-    - name: "Python 3.7.1 on Windows"
+  - name: "Python 3.7.1 on Windows"
     os: windows
     language: shell
     before_install:
