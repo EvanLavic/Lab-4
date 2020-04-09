@@ -7,8 +7,7 @@ jobs:
     os: windows
     language: shell
     before_install:
-      - choco install python --version 3.7.1
-      - choco install python3-pip
+      - choco install python-pip --version 3.7.1
       - python -m pip install --upgrade pip
 install:
   - pip install -r requirements.txt
