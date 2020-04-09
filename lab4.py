@@ -13,5 +13,5 @@ for i in lines:
 
 fw = open ("Answer.txt", "w")
 for i in answer:
-    fw.write(str(i))
+    fw.write(str(i) + "\n")
 fw.close()
