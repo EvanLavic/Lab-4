@@ -7,9 +7,6 @@ class Testlab:
         f = open("Answer.txt", "r")
         liste = f.read().splitlines()
         for i in range(len(liste)):
-            print (liste)
-            print ("/n")
-            print (right_answ)
             if (liste[i]!=right_answ[i]):
                 assert 0
         assert 1

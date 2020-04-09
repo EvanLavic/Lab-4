@@ -12,5 +12,6 @@ for i in lines:
     answer.append("+1 (" + i[lc:rc] + ") " + i[rc:])
 
 fw = open ("Answer.txt", "w")
-fw.write(str (answer))
+for i in answer:
+    fw.write(str(i))
 fw.close()
