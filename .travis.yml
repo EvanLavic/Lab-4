@@ -1,4 +1,8 @@
 language: python
+addons: 
+  SonarCloud:
+    organization: "evanlavic"
+    token: 1342e1ad03aea8205fd390811d4a8c667017ed15
 script:
   - python lab4.py
   - pytest
