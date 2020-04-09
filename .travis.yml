@@ -1,13 +1,11 @@
 language: python
 jobs:
   include:
-  - name: "Python 3.7.1 on Linux"
-    python: 3.7.1 
-  - name: "Python 3.7.1 on Windows"
+  - name: "Python 3 on Windows"
     os: windows
     language: shell
     before_install:
-      - choco install python-pip --version 3.7.1
+      - choco install python-pip --version 3
       - python -m pip install --upgrade pip
 install:
   - pip install -r requirements.txt
