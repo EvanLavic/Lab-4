@@ -6,11 +6,11 @@ jobs:
     language: shell
     before_install:
       - choco install python3
-      - python3 -m pip || wget https://bootstrap.pypa.io/get-pip.py | python3
+      - python -m pip || wget https://bootstrap.pypa.io/get-pip.py | python3
       - python -m pip install --upgrade pip
 install:
   - pip install -r requirements.txt
 # command to run tests
 script:
   - pytest
-  - python3 lab 4.py || python lab 4.py
+  - python lab 4.py || python lab 4.py
