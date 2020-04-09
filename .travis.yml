@@ -8,8 +8,8 @@ jobs:
     language: shell
     before_install:
       - choco install python --version 3.7.1
-      #- 
-      #- python -m pip install --upgrade pip
+      - choco install python3-pip
+      - python -m pip install --upgrade pip
 install:
   - pip install -r requirements.txt
 # command to run tests
