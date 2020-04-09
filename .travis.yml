@@ -5,7 +5,7 @@ jobs:
     os: windows
     language: shell
     before_install:
-      - choco install python
+      - choco install python --version 2.7
       - choco install pip
       - python -m pip install --upgrade pip
 install:
