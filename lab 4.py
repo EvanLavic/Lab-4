@@ -2,7 +2,7 @@
 f = open("Telnum.txt", "r")
 
 lines = f.read().splitlines()
-
+f.close()
 answer = []
 lc = 2
 for i in lines:
@@ -10,4 +10,6 @@ for i in lines:
         lc = len(i) - 10
     answer.append("+1" + i[lc:])
 
-print (answer)
+fw = open ("Answer.txt", "w")
+fw.write(str (answer))
+fw.close()
