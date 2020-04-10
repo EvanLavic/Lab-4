@@ -5,7 +5,7 @@ addons:
     token: 1342e1ad03aea8205fd390811d4a8c667017ed15
 install:
   - pip install coverage coveralls
-  - pip install -I -r requirements.txt
+  - pip install -I -r requirements.txt --use-mirrors
 script:
   - python lab4.py
   - pytest
