@@ -7,6 +7,6 @@ install:
   - pip install coverage coveralls
   - pip install -I -r requirements.txt
 script:
-  - coverage run -m pytest 
+  - coverage run -m --source=. pytest 
 after_success:
   - coveralls
