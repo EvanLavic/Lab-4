@@ -7,7 +7,6 @@ install:
   - pip install coverage coveralls
   - pip install -I -r requirements.txt
 script:
-  - coverage run -a test_lab4.py
-  - sonar-scanner
+  - coverage run -a --sorce=/ test_lab4.py
 after_success:
   - coveralls
