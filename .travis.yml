@@ -7,6 +7,6 @@ install:
   - pip install coverage coveralls
   - pip install -I -r requirements.txt
 script:
-  - coverage run -a --sorce=/ test_lab4.py
+  - coverage run -m pytest 
 after_success:
   - coveralls
