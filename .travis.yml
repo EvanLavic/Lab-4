@@ -4,8 +4,7 @@ addons:
     organization: "evanlavic"
     token: 1342e1ad03aea8205fd390811d4a8c667017ed15
 install:
-  - pip install coverage coveralls
-  - pip install python-coveralls
+  - pip install -I -r requirements.txt
 script:
   - python lab4.py
   - pytest
